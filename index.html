@@ -1,25 +1,91 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>CustomGPT Chat Integration</title>
-    <style>
-      header {
-        background-color: lightgray;
-        color: blue;
-        padding: 10px;
-        text-align: center;
-        font-size: 18px;
-      }
-    </style>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESG Reports Chat</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+body {
+      font-family: Arial, sans-serif;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  height: 100px;
+  width: auto;
+}
+
+.header-menu {
+  float: right;
+  list-style-type: none;
+}
+
+.header-menu li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.header-menu a {
+  color: #222;
+  text-decoration: none;
+}
+
+.header-menu a:hover {
+  color: #666;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">
+	    <img src="adnoc-logo.png" alt="ADNOC Logo" class="logo">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="#about">About</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+</header>
+
+
     <script src="https://cdn.customgpt.ai/js/chat.js"></script>
     <script>window.onload = () => { CustomGPT.init({p_id: "822", p_key: "2880db911021c0f4c2bee410d5b2cffc" }) }</script>
-    <header>
-      <h1>ESG Reports Chat</h1>
-    </header>
     <div id="customgpt_chat" style="height: 100vh;"></div>
     <script src="https://cdn.customgpt.ai/js/embed.js" width="100%" height="500px" p_id="822" p_key="2880db911021c0f4c2bee410d5b2cffc" div_id="customgpt_chat"></script>
+
+<!-- About Page -->
+<section id="about" class="bg-light py-5">
+	<div class="container">
+		<h2 class="text-center mb-5">About This Bot</h2>
+		<div class="row">
+			<div class="col-md-6 mb-4">
+				<p>This robot is a demonstration and an example of the adaptation of GPT technology to sustainability topic in oil and gas. It consists of the construction of a searchable knowledge base on the topic of sustainability in general and oil and gas in particular. The documents used are recent and come from international organizations: </p>
+			</div>
+			<div class="col-md-6">
+				<ul class="list-group">
+					<li class="list-group-item"><strong>Developed by:</strong> Ridha Zegdane</li>
+					<li class="list-group-item"><strong>Training Model:</strong> CustomGPT + ChatGPT</li>
+					<li class="list-group-item"><strong>Training Data:</strong> <a>Document List</a></li>
+                    <li class="list-group-item"><strong>Email:</strong> rzegdane@adnoc.ae</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
   </body>
 </html> 
