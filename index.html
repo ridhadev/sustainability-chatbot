@@ -3,67 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ESG Reports Chat</title>
+  <title>Chat bot</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <style>
-body {
-      font-family: Arial, sans-serif;
+header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 25px;
+  line-height: 25px;
+}
+header h1 {
+  color: #0071C5;
+  text-align: center;
+  margin: 0;
+  flex-grow: 1;
+}
+header button {
+  background-color: #0071C5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 5px 10px;
+  margin-right: 10px;
 }
 .logo {
   font-size: 2rem;
   font-weight: bold;
   color: #222;
-  height: 100px;
+  height: 33px;
   width: auto;
 }
 
-.header-menu {
-  float: right;
-  list-style-type: none;
-}
-
-.header-menu li {
-  display: inline;
-  padding: 0 10px;
-}
-
-.header-menu a {
-  color: #222;
-  text-decoration: none;
-}
-
-.header-menu a:hover {
-  color: #666;
-}
 
 </style>
-</head>
-<body>
+</body>
 
 <!-- Header -->
 <header>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="#">
-	    <img src="adnoc-logo.png" alt="ADNOC Logo" class="logo">
-	  </a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-	    <ul class="navbar-nav">
-	      <li class="nav-item">
-	        <a class="nav-link" href="#about">About</a>
-	      </li>
-	    </ul>
-	  </div>
-	</nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="adnoc-logo.png" alt="ADNOC Logo" class="logo" >
+    </a>
+    <h1 class="header-background">UAE SustAIna Bot</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+      </ul>
+      <button>Button</button>
+    </div>
+  </nav>
 </header>
-    <div id="customgpt_chat" style="height: 100vh;"></div>
-    <script src="https://cdn.customgpt.ai/js/embed.js" width="100%" height="500px" p_id="1055" p_key="4f14a2936c169a1733fe29602cf6176d" div_id="customgpt_chat"></script>
 
+      <div id="customgpt_chat" style="height: 100vh;"></div>
+    <script src="https://cdn.customgpt.ai/js/embed.js" width="100%" height="800px" p_id="1055" p_key="4f14a2936c169a1733fe29602cf6176d" div_id="customgpt_chat"></script>
+  </body>
+<foot>
 <!-- About Page -->
 <section id="about" class="bg-light py-5">
 	<div class="container">
@@ -74,8 +82,7 @@ body {
 			</div>
 			<div class="col-md-6">
 				<ul class="list-group">
-					<li class="list-group-item"><strong>Developed by:</strong>Ridha Zegdane</li>
-					<li class="list-group-item"><strong>Training Model:</strong> CustomGPT + ChatGPT</li>
+					<li class="list-group-item"><strong>Developed by:</strong> Ridha Zegdane</li>
 					<li class="list-group-item"><strong>Training Data:</strong> <a>Document List</a></li>
                     <li class="list-group-item"><strong>Email:</strong> rzegdane@adnoc.ae</li>
 				</ul>
@@ -83,5 +90,5 @@ body {
 		</div>
 	</div>
 </section>
-  </body>
+</foot>
 </html> 
